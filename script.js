@@ -212,12 +212,14 @@ window.addEventListener('scroll', function() {
         if(scrollNav <= 17.66)
         {
             nav.style.padding = 60 - scrollNav*3 + 'px 10%';
+            nav.style.paddingBottom = '7px'
             brand.style.fontSize = 37 - scrollNav*0.369 +'px';
         }
         else if(scrollNav > 17.66)
         {
             nav.style.padding = '7px 10%';
             brand.style.fontSize = '30px';
+            nav.style.paddingBottom = '7px'
         }
         if(sec2 < 800)
         {
@@ -297,10 +299,12 @@ window.addEventListener('scroll', function() {
         if(scrollNav <= 6.3333)
         {
             nav.style.padding = 40 - scrollNav*3 + 'px 10px';
+            nav.style.paddingBottom = '7px'
         }
         else if(scrollNav > 6.333)
         {
-            nav.style.padding = '10px 10px';
+            nav.style.padding = '10px';
+            nav.style.paddingBottom = '7px'
             nav.style.background = 'black';
         }
         if(sec6 < scrollArea * 0.9)
@@ -373,10 +377,12 @@ window.addEventListener('scroll', function() {
         if(scrollNav <= 13.3333)
         {
             nav.style.padding = 60 - scrollNav*3 + 'px 40px';
+            nav.style.paddingBottom = '7px'
         }
         else if(scrollNav > 13.333)
         {
             nav.style.padding = '10px 40px';
+            nav.style.paddingBottom = '10px'
             nav.style.background = 'black';
         }
         if(sec2 < scrollArea)
