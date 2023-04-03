@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+:root {
+    --primary: #4F4FFF;
+}
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background: black;
+}
+
+.navigation {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 53px;
+}
+
+.navigation .brand {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 37px;
+    line-height: 55px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.navigation .brand:hover {
+    color: #4F4FFF;
+}
+.navigation .links {
+    display: flex;
+    gap: 20px;
+    
+}
+
+/* LINK */
+.navigation .links .nav_link {
+    height: 55px;
+    width: 176px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 55px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 0.5s;
+}
+
+.navigation .links .nav_link::before,
+.navigation .links .nav_link::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    transform-origin: 0% 50%;
+    z-index: -2;
+}
+.navigation .links .nav_link::after {
+    transform: scaleX(0);
+    z-index: -1;
+    background: var(--primary);
+}
+
+
+
+/* LINK: GRAY BORDERED */
+.navigation .links .nav_link.grayBorder {
+    border: 2px solid rgb(39, 39, 39);
+}
+.navigation .links .nav_link.grayBorder::before {
+    content: none;
+}
+.navigation .links .nav_link.grayBorder:hover {
+    border: 2px solid var(--primary);
+}
+.navigation .links .nav_link.grayBorder:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* LINK: WHITE  */
+.navigation .links .nav_link.white {
+    color: black;
+}
+.navigation .links .nav_link.white:hover {
+    color: white;
+}
+
+.navigation .links .nav_link.white::before {
+    background: white;
+}
+.navigation .links .nav_link.white::after {
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+}
+.navigation .links .nav_link.white:hover::after {
+    transform: scaleX(1);
+}
+
+
+
