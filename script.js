@@ -70,7 +70,7 @@
         if(isModalOpen == 0){
             modal.classList.add('open');
         }
-    }, 30000);
+    }, 60000);
 
     function ValidateEmail()
     {
