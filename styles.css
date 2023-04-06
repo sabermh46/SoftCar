@@ -1041,6 +1041,7 @@ body {
     .first2 {
         width: 60%;
         height: 700px;
+        padding-bottom: 200px;
     }
     .fd23 {
         visibility: hidden;
@@ -1198,6 +1199,23 @@ body {
     .fd12 {
         height: 200px;
     }
+    .blog-container {
+        flex-direction: column;
+    }
+    .blog-container div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .blog-content {
+        padding-top: 40px;
+        max-width: none;
+    }
+    .blog-text {
+        font-size: 20px;
+    }
+    .blog-content > button {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 500px) and (min-width: 1px) {
@@ -1330,17 +1348,27 @@ body {
         position: relative;
         width: 100%;
         padding-top: 18px;
+        padding-bottom: 100px;
         height: auto;
+    }
+    .sec1 > .image {
+        margin: 0 auto;
     }
     .section2.sec2 {
         position: relative;
         height: auto;
         width: 100%;
-        padding-top: 100px;
+        padding-top: 50px;
         padding-bottom: 0px;
         top: 0px;
         -webkit-transition: 0.6s cubic-bezier(.06,.62,.66,1.1);
         transition: 0.6s cubic-bezier(.06,.62,.66,1.1);
+    }
+    .section2.sec2 p {
+        width: 65%;
+        padding-right: 0;
+        padding-bottom: 20px;
+        font-size: 3vw;
     }
     .double-img {
         margin-left: 0;
@@ -1475,6 +1503,7 @@ body {
             -ms-flex-flow: column;
                 flex-flow: column;
         overflow: hidden;
+        padding: 20px;
     }
     .section5 {
         width: 100%;
@@ -1709,6 +1738,9 @@ body {
     .section8 h1 {
         font-size: 6vw;
     }
+    .main-video {
+        aspect-ratio: auto;
+    }
     .up {
         margin-left: 85%;
         bottom: 30px;
@@ -1718,7 +1750,7 @@ body {
         height: 0;
     }
     .fd45 {
-        height:150px;
+        height: 50px;
     }
     .full-h {
         min-height: 0;
@@ -1738,6 +1770,24 @@ body {
                 transform: translateY(0px);
             opacity: 1;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+
+    .blog-container {
+        flex-direction: column;
+    }
+    .blog-container div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .blog-content {
+        padding-top: 40px;
+        max-width: none;
+    }
+    .blog-text {
+        font-size: 20px;
+    }
+    .blog-content > button {
+        width: 100% !important;
     }
 }
 
