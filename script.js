@@ -34,7 +34,6 @@
     var hITw = document.querySelector('.hITw');
 
     var bottomText1 = document.querySelector('.sec8h11');
-    var bottomText2 = document.querySelector('.sec8h12');
 
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(min-width: 501px)");
@@ -161,11 +160,9 @@ window.addEventListener('scroll', function() {
 
     if(btmText < scrollArea) {
         bottomText1.classList.add('middle');
-        bottomText2.classList.add('middle');
     }
     else {
         bottomText1.classList.remove('middle');
-        bottomText2.classList.remove('middle');
     }
         
 
