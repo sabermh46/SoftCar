@@ -565,7 +565,7 @@ body {
     line-height: 170%;
     opacity: 0.72;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=72)";
-    font-size: 12px;
+    font-size: 1.5vw;
 }
 .content2 p, .content7 p {
     padding-top: 20px;
@@ -573,7 +573,7 @@ body {
     line-height: 10%;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    font-size: 12px;
+    font-size: 1.5vw;
     -webkit-transform: translateY(60px);
             transform: translateY(60px);
     -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
