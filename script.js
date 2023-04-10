@@ -69,7 +69,7 @@
         if(isModalOpen == 0){
             modal.classList.add('open');
         }
-    }, 60000);
+    }, 600000);
 
     function ValidateEmail()
     {
